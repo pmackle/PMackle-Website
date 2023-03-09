@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import LogoP from "../../assets/images/logo-p.png";
 
@@ -30,6 +31,23 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        {/* target blank so it opens in new tab */}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/patrick-mackle/"
+        >
+          <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noreferrer" href="https://github.com/pmackle">
+          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        </a>
+      </li>
+    </ul>
   </div>
 );
 
