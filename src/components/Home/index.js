@@ -1,6 +1,6 @@
 import LogoTitle from "../../assets/images/logo-p.png";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 
@@ -22,6 +22,12 @@ const Home = () => {
     "e",
     "r",
   ];
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
 
   return (
     <div className="container home-page">
@@ -46,7 +52,7 @@ const Home = () => {
             idx={21}
           />
         </h1>
-        <h2>Frontend Developer / JavaScript Fella / Bread Baker</h2>
+        <h2>Frontend Developer / Walking Enthusiast / Film Guy</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
