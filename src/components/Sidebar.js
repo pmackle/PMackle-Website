@@ -2,8 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import "./index.scss";
-import LogoP from "../../assets/images/logo-p.png";
+import "./Sidebar.scss";
+import LogoP from "../assets/images/logo-p.png";
 
 const Sidebar = () => (
   <div className="nav-bar">

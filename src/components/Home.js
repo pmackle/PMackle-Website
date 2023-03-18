@@ -1,27 +1,14 @@
-import LogoTitle from "../../assets/images/logo-p.png";
+import LogoTitle from "../assets/images/logo-p.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import AnimatedLetters from "../AnimatedLetters";
-import "./index.scss";
+import AnimatedLetters from "./AnimatedLetters";
+import Logo from "./Logo";
+import "./Home.scss";
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate"); // useState for animation on hover
   const nameArray = ["a", "t", "r", "i", "c", "k"];
-  const jobArray = [
-    "w",
-    "e",
-    "b",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
+  const jobArray = "web developer".split("");
 
   useEffect(() => {
     setTimeout(() => {
@@ -57,6 +44,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };
