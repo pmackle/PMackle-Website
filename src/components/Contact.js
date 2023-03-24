@@ -25,11 +25,12 @@ const Contact = () => {
         "2mmueVbhkKn5TRqFe"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          alert("Message successfully sent!");
+          window.location.reload(false);
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          alert("Failed to send the message, please try again");
         }
       );
   };
